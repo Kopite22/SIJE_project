@@ -11,7 +11,7 @@ const Stack = createStackNavigator();
 
 const MainStack = () => {
   return (
-    <Stack.Navigator initialRouteName="findBle">
+    <Stack.Navigator initialRouteName={stackMenu.findBle.name}>
       <Stack.Screen
         name={stackMenu.findBle.name}
         component={FindBLE}
